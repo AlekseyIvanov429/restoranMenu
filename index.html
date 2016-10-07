@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LaLika</title>
+    <link rel="SHORTCUT ICON" href="img/ic_l.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_slider.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/style-tabs.css">
+
+    <!-- yfx -->
+
+    <!-- ss -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjYCqoc5PsL105heD3wqf5kvYJCn2k5Ww&callback=initMap">
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="header">
+            <div class="slider" id="slider">
+                <ul id="content-slider" class="content-slider">
+                    <li>
+                        <img src="img/slider/bg--img.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/slider/bg--img2.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/slider/bg--img.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/slider/bg--img2.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/slider/bg--img.png" alt="">
+                    </li>
+                </ul>
+
+                <div class="bg-opacity"></div>
+
+            </div>
+            <div class="container">
+                <div class="nav">
+                    <a href="#">главная</a>
+                    <a href="#about">о ресторане</a>
+                    <a href="#menu">меню</a>
+                    <a href="#reservation">резервация</a>
+                    <a href="#shares">акции</a>
+                    <a href="#contact">контакты</a>
+                </div>
+                <a href="#"><img class="logo" src="img/logo.png" alt=""></a>
+                <div class="social">
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="twitter"></a>
+                    <a href="#" class="google"></a>
+                </div>
+                <button class="down"></button>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="about" id="about">
+                    <h2>О ресторане</h2>
+                    <i class="ic--symbol"></i>
+                    <p class="bold">Любовь приходит и уходит, а кушать хочется всегда. И даже тогда, когда вновь она приходит.
+                        <br/> Ощути вкус грузинских блюд в Lazika - лучшем ресторане традиционной грузинской кухни в Киеве.</p>
+                    <p>
+                        Спокойная уютная обстановка, обаяние персонала и качественный сервис ждут вас в самом центре
+                        <br/> Киева, в нашем ресторане. Также, Вы можете заказать шедевры грузинской кухни прямо к себе домой, оформив свой заказ на сайте.</p>
+
+                    <div class="ic-block">
+                        <div class=" ic ic--barbecue">
+                            <img src="img/img_eat.png" alt="">
+                        </div>
+                        <div class="ic ic--soup">
+                            <img src="img/img_soup.png" alt="">
+                        </div>
+                        <div class="ic ic--cup">
+                            <img src="img/img_cup.png" alt="">
+                        </div>
+                    </div>
+                    <!-- ic-block -->
+                    <div class="gallery">
+                        <div class="item">
+                            <a class="example-image-link" href="img/gallery.png" data-lightbox="example-set">
+                                <img class="example-image" src="img/gallery.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="item2">
+                            <div class="item__img">
+                                <a class="example-image-link" href="img/gallery2.png" data-lightbox="example-set">
+                                    <img class="example-image" src="img/gallery2.png" alt="" />
+                                </a>
+                            </div>
+                            <div class="item__img2">
+                                <a class="example-image-link" href="img/gallery3.png" data-lightbox="example-set">
+                                    <img class="example-image" src="img/gallery3.png" alt="" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item3">
+                            <a class="example-image-link" href="img/gallery4.png" data-lightbox="example-set">
+                                <img class="example-image" src="img/gallery4.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <!-- gallery -->
+                </div>
+                <!-- about -->
+                <div class="menu" id="menu">
+                    <h2>Меню</h2>
+                    <i class="ic--symbol"></i>
+                    <p class="bold">Для Вас представлены лучшие предложения нашего ресторана</p>
+                    <p>
+                        <div class="menu__cat">
+                            <div class="tabs">
+                                <ul>
+                                    <li class="circle c--meat">
+                                        <img src="" alt="">
+                                    </li>
+                                    <li class="circle c--salads">
+                                        <img src="" alt="">
+                                    </li>
+                                    <li class="circle c--drink">
+                                        <img src="" alt="">
+                                    </li>
+                                    <li class="circle c--wine">
+                                        <img src="" alt="">
+                                    </li>
+                                </ul>
+                                <div>
+                                    <div class="menu_product">
+                                        <ul>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat_sveg.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Свежесть"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>27,99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/hincali.png" alt="" />
+                                                </div>
+                                                <h3>Хинкали</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>19.99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Грузия"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>13,99 uah</span>
+                                            </li>
+
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/hachapuri.png" alt="" />
+                                                </div>
+                                                <h3>Хачапури по аджарски</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>55.99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Грузия"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>13,99 uah</span>
+                                            </li>
+
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/hachapuri.png" alt="" />
+                                                </div>
+                                                <h3>Хачапури по аджарски</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>55.99 uah</span>
+                                            </li>
+                                            <button class="watch">Смотреть все</button>
+                                        </ul>
+
+                                    </div>
+                                    <div class="menu_product">
+                                        <ul>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/hachapuri.png" alt="" />
+                                                </div>
+                                                <h3>Хачапури по аджарски</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>55.99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/hincali.png" alt="" />
+                                                </div>
+                                                <h3>Хинкали</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>19.99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Грузия"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>13,99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat_sveg.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Свежесть"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>27,99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Грузия"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>13,99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat_sveg.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Свежесть"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>27,99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Грузия"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>13,99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat_sveg.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Свежесть"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>27,99 uah</span>
+                                            </li>
+                                            <button class="watch">Смотреть все</button>
+                                        </ul>
+
+                                    </div>
+                                    <div class="menu_product">
+                                        <ul>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/hincali.png" alt="" />
+                                                </div>
+                                                <h3>Хинкали</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>19.99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/hachapuri.png" alt="" />
+                                                </div>
+                                                <h3>Хачапури по аджарски</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>55.99 uah</span>
+                                            </li>
+
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Грузия"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>13,99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat_sveg.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Свежесть"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>27,99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat_sveg.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Свежесть"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>27,99 uah</span>
+                                            </li>
+                                            <button class="watch">Смотреть все</button>
+                                        </ul>
+
+                                    </div>
+                                    <div class="menu_product">
+                                        <ul>
+
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Грузия"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>13,99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/salat_sveg.png" alt="" />
+                                                </div>
+                                                <h3>Салат "Свежесть"</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>27,99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/hachapuri.png" alt="" />
+                                                </div>
+                                                <h3>Хачапури по аджарски</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>55.99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/hincali.png" alt="" />
+                                                </div>
+                                                <h3>Хинкали</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>19.99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/hachapuri.png" alt="" />
+                                                </div>
+                                                <h3>Хачапури по аджарски</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа </p>
+                                                <span>55.99 uah</span>
+                                            </li>
+                                            <li>
+                                                <div class="circle_menu">
+                                                    <img src="img/hincali.png" alt="" />
+                                                </div>
+                                                <h3>Хинкали</h3>
+                                                <p>Здесь пишется состав блюда и прочая инфа</p>
+                                                <span>19.99 uah</span>
+                                            </li>
+                                            <button class="watch">Смотреть все</button>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tabs -->
+                        </div>
+                        <!-- menu__cat -->
+                </div>
+                <!-- menu -->
+
+
+            </div>
+            <!-- container -->
+            <div class="reservation" id="reservation">
+                <div class="container">
+                    <h3>reservation</h3>
+                    <p>Зарезервируйте стол для вечернего ужина или деловой встречи</p>
+                    <span>+38 095 113 36 83</span><i class="ic--phone"></i><span>+38 044 278 00 66</span>
+                    <form action="">
+                        <input type="text" placeholder="Имя" />
+                        <input type="text"  placeholder="Дата" class="ic--calendar" />
+                        <input type="text" placeholder="Время" class="ic--time" />
+                        <button>Зарезервировать</button>
+                    </form>
+
+                </div>
+                <!-- container -->
+                <div class="bg-reservation-op"></div>
+            </div>
+            <!-- reservation -->
+            <div class="shares" id="shares">
+                <div class="container">
+                    <h2>Акционные предложения</h2>
+                    <i class="ic--symbol"></i>
+                    <p>Мы всегда подбираем для наших клиентов самые интересные и выгодные предложения</p>
+                    <ul>
+                        <li>
+                            <div class="img-shares">
+                                <img src="img/photo3.png" alt="">
+                            </div>
+                            <h4>Винный четверг</h4>
+                            <p>Каждый четверг в ресторане “Лазика” -30% скидка на весь асортимент вина. Приходите с друзьями, коллегами, любимыми и наслаждайтесь качественными винами по разумной цене.</p>
+                        </li>
+                        <li>
+                            <h4 class="pt">Завтраки</h4>
+                            <p>Ежедневно с 08:00 до 14:00 вы можете заказать завтраки в отдельном, акционном разделе меню. В состав завтрака входит первое блюдо, салат и напиток. Стоимость любого завтрака - 69.00 грн</p>
+                            <div class="img-shares">
+                                <img src="img/photo4.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-shares">
+                                <img src="img/photo5.png" alt="">
+                            </div>
+                            <h4 class="pt">Сладкий вторник</h4>
+                            <p>Каждый вторник в ресторане “Лазика” -30% на все десерты! Приходите с подругами и детьми, чтобы поднять себе настроение, отведав наших фирменных сладостей.</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- container -->
+            </div>
+            <!-- shares -->
+            <div class="contact" id="contact">
+                <div class="ic-position"></div>
+                <div id="map">
+
+                </div>
+                
+                <div class="info_ad">
+                    <h2>Lazika</h2>
+                    <p>г. Киев, ул. Малая-Житомирская 16/3
+                        <span>+38 095 113 36 83;  +38 044 278 00 66 </span>
+                        <span>lazika.kiev@gmail.com</span></p>
+                </div>
+                <div class="container">
+                    <div class="nav">
+                        <a href="#slider">главная</a>
+                        <a href="#about">о ресторане</a>
+                        <a href="#menu">меню</a>
+                        <a href="#reservation">резервация</a>
+                        <a href="#shares">акции</a>
+                        <a href="#contact">контакты</a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="facebock"></a>
+                        <a href="#" class="twitter"></a>
+                        <a href="#" class="google"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- shares -->
+        </div>
+        <!-- content -->
+    </div>
+    <!-- wrapper -->
+
+
+
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script>
+        $(document).ready(function () {
+            slider();
+        });
+    </script>
+    <script src="js/tabs.js"></script>
+
+</body>
+
+</html>

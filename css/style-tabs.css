@@ -1,0 +1,45 @@
+.menu__cat .tabs {
+    display: block;
+}
+
+.menu__cat .tabs > div {
+    padding-top: 10px;
+}
+
+.menu__cat .tabs>ul {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 80px;
+    display: inline-block;
+}
+
+.menu__cat .tabs> ul> li:first-child{
+    margin-left: 0;
+}
+.menu__cat .tabs> ul> li {
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 10px 15px;
+    background: ;
+    color: #707070;
+    margin-left: 76px;
+}
+
+.menu__cat .tabs ul li.c--meat.active {
+    background: #a84a3e url(../img/new--ic.png) no-repeat 30px -81px;
+}
+.menu__cat .tabs ul li.c--salads.active {
+    color: #fff;
+    background: #a84a3e url(../img/new--ic.png) no-repeat  -179px -81px;
+}
+.menu__cat .tabs ul li.c--drink.active {
+    color: #fff;
+    background: #a84a3e url(../img/new--ic.png) no-repeat -367px -75px;
+}
+.menu__cat .tabs ul li.c--wine.active {
+    color: #fff;
+    background: #a84a3e url(../img/new--ic.png) no-repeat -568px -70px;
+}
